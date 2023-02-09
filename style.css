@@ -160,9 +160,16 @@
     font-weight: 300;
 }
 .bimestre-res, .pts-res, .porcents-res {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .passed{
     margin: 10px 0;
+    animation: animPassed 10s ease-in-out infinite;
 }
+
+@keyframes animPassed{
+    0%{color: green;}
+    100%{color: rgb(26, 200, 26);}
+}
+
