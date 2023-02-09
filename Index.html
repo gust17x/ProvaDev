@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,200;1,600;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Prova</title>
+</head>
+<body>
+
+<section class="container">
+    
+    <form class="form-user">
+        <h2>Cadastro</h2>
+        <label>
+            Nome:
+            <input type="text" required class="name-user" maxlength="60"  placeholder="Digite seu nome">
+        </label>
+
+        <label>
+            Idade:
+            <input type="number" required class="age-user"  placeholder="Digite sua idade">
+        </label>
+
+        <label>
+            Bimestre:
+            <input type="number" required class="bimestre-user"  max="4" placeholder="Ex: 1 bimestre">
+        </label>
+
+        <button type="submit">Confirmar</button>
+
+    </form>
+
+    <form class="form">
+
+        <nav class="title-info">
+            <h1>Responda as questões</h1>
+            <p>Cada questão vale 1 ponto, consiga pelomenos 4 pts para ser aprovado, <span>boa sorte!</span> </p>
+        </nav>
+
+        <label class="quest-wan">
+
+            <h2>1 - Qual editor de codigo é mais usado para programção?</h2>
+            <ul>
+                <li>a) Excel</li>
+                <li>b) Portugol studio</li>
+                <li>c) Vs code</li>
+                <li>d) Code runner</li>
+            </ul>
+
+            <input type="text" placeholder="" required maxlength="1" class="input-wan">
+        </label>
+
+        <label class="quest-two">
+            <h2>2 - Qual argumento é usado para fazer animações no css?</h2>
+            <ul>
+                <li>a) Focus</li>
+                <li>b) .container</li>
+                <li>c) Hover</li>
+                <li>d) @keyframes</li>
+            </ul>
+
+            <input type="text" placeholder="" required maxlength="1" class="input-two">
+        </label>
+
+        <label class="quest-try">
+            <h2>3 - Qual programa nescessario pra usar o react.js?</h2>
+            <ul>
+                <li>a) Node.js</li>
+                <li>b) Chrome</li>
+                <li>c) Files</li>
+                <li>d) cmd</li>
+            </ul>
+
+            <input type="text" placeholder="" required maxlength="1" class="input-try">
+        </label>
+
+        <label class="quest-for">
+            <h2>4 - Hook que permite alterar dados de um estado em react</h2>
+            <ul>
+                <li>a) Framer-motion</li>
+                <li>b) React-routes</li>
+                <li>c) UseFetch</li>
+                <li>d) Usestate</li>
+            </ul>
+
+            <input type="text" placeholder="" required maxlength="1" class="input-for">
+        </label>
+
+        <label class="quest-fiv">
+            <h2>5 - hook usado para buscar ou enviar dados para api etc...</h2>
+            <ul>
+                <li>a) Dom Pedro 1</li>
+                <li>b) UseFetch</li>
+                <li>c) Context</li>
+                <li>d) React-icons</li>
+            </ul>
+
+            <input type="text" placeholder="" required maxlength="1" class="input-fiv">
+        </label>
+
+        <button type="submit">Confirmar</button>
+    </form>
+
+    <div class="end-test-container">
+        <h1>Resultados</h1>
+
+        <ul class="end-test">
+            <h2 class="name-res"></h2>
+            <li class="pts-res"></li>
+            <li> <span class="porcents-res"></span> </li>
+            <li class="bimestre-res"></li>
+
+            <h2 class="passed"></h2>
+
+        </ul>
+
+        <p>Todos os das são protegido com criptogrfia de ponta a ponta &copy;gust17x</p>
+
+    </div>
+
+</section>
+</body>
+</html>
